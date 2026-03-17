@@ -102,6 +102,18 @@ body {
   background: #ddebf8;
   color: #2b2839;
   border-radius: 5px;
+
+  border: 0 solid #3f459a;
+
+  box-shadow: 8px 8px 0 #3f459a, 15px 15px 20px rgba(0, 0, 0, 0.2);
+
+
+  transition: transform 0.15s ease-out, box-shadow 0.15s ease-out;
+}
+
+.card:hover {
+  transform: translate(4px, 4px);
+  box-shadow: 4px 4px 0 #3f459a, 8px 8px 10px rgba(0, 0, 0, 0.2);
 }
 
 .hero {
@@ -122,23 +134,35 @@ body {
 }
 
 h4 {
-  font-style: italic;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #3f459a;
+  color: #ffffff;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-style: normal;
+  font-size: 0.85em;
+  letter-spacing: 1px;
 }
 
 .btn-services {
   color: white;
-  background-color: #2b2839;
+  background-color: #3f459a;
   border-radius: 5px;
   text-decoration: none;
   padding: 15px 30px;
-
   display: inline-block;
   margin-bottom: 60px;
   margin-top: 10px;
+
+  border: 0 solid #2b2839;
+  box-shadow: 4px 4px 0 #212551;
+  transition: transform 0.15s, box-shadow 0.15s;
 }
 
 .btn-services:hover {
   background-color: #191720;
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 #3f459a;
 }
 
 /* ==========================================================================
