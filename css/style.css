@@ -90,6 +90,7 @@ body {
   margin: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 .avatar {
   width: 150px;
   height: 150px;
@@ -170,12 +171,12 @@ h4 {
   transform: translate(2px, 2px);
   box-shadow: 2px 2px 0 #3f459a;
 }
+
 footer {
   margin-top: 40px;
   padding-bottom: 30px;
   text-align: center;
 }
-
 
 
 .contenedor-validadores {
@@ -192,7 +193,7 @@ footer {
   display: inline-block;
   border: 1px solid #3f459a;
   border-radius: 4px;
-  box-shadow: 4px 4px 0px #3f459a;
+  box-shadow: 4px 4px 0 #3f459a;
   background-color: white; /* Fondo blanco para contraste del escudo HTML5 */
   transition: transform 0.15s ease-out, box-shadow 0.15s ease-out;
 }
@@ -200,7 +201,7 @@ footer {
 
 .badge-validador:hover {
   transform: translate(2px, 2px);
-  box-shadow: 2px 2px 0px #3f459a;
+  box-shadow: 2px 2px 0 #3f459a;
 }
 
 
@@ -214,6 +215,16 @@ footer {
   height: 31px;
   padding: 2px;
   box-sizing: border-box;
+}
+
+.servicio-premium {
+  background: #60a5e4;
+  transform: scale(1.02);
+  border-radius: 5px;
+  border: 0 solid #3f459a;
+  box-shadow: 8px 8px 0 #3f459a, 15px 15px 20px rgba(0, 0, 0, 0.2);
+
+  transition: transform 0.15s ease-out, box-shadow 0.15s ease-out;
 }
 /* ==========================================================================
    Helper classes
