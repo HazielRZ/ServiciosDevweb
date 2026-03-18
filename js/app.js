@@ -126,6 +126,7 @@ for (let i = 0; i < catalogoServicios.length; i++) {
 
 
 root.appendChild(seccionCatalogo);
+
 /**
  * @returns {HTMLElement} Nodo footer ensamblado.
  */
@@ -161,5 +162,43 @@ function crearFooterValidadores() {
 
   return footer;
 }
+
+
+
+function obtenerDatosSincronizados() {
+  // 1. Intentar obtener el arreglo desde el almacenamiento local
+  const datosLocales = localStorage.getItem('catalogoServicios');
+
+  if (datosLocales) {
+    // 2. Convertir el String guardado nuevamente a un Arreglo de Objetos
+    return JSON.parse(datosLocales);
+  } else {
+    // 3. Si no existe, usamos nuestro arreglo original de 10 elementos y lo guardamos
+    const catalogoBase = [
+      /* ... Aquí van sus 10 objetos originales que definimos antes ... */
+    ];
+    // Convertir el objeto a String para guardarlo
+    localStorage.setItem('catalogoServicios', JSON.stringify(catalogoBase));
+    return catalogoBase;
+  }
+}
+
+// Dentro de su función crearNavegacion() actual, debe agregar el nuevo enlace:
+function crearNavegacion() {
+  const header = document.createElement('header');
+  // ... su código anterior ...
+
+  const enlaceAlta = document.createElement('a');
+  enlaceAlta.href = 'alta.html'; // Enlace a la nueva página
+  enlaceAlta.textContent = '+ Agregar Nuevo Servicio';
+  enlaceAlta.className = 'btn-services';
+  enlaceAlta.style.marginLeft = '15px'; // Separación del botón de regreso
+
+  header.appendChild(enlaceAlta); // Añadirlo al header
+  return header;
+}
+document.addEventListener('DOMContentLoaded', () => {
+  inicializarCatalogo();
+});
 
 root.appendChild(crearFooterValidadores());
