@@ -85,9 +85,15 @@ textarea {
    ========================================================================== */
 
 body {
+  background-color: #add0ed;
   text-align: center;
   margin: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
 }
 
 .card {
@@ -96,7 +102,7 @@ body {
   margin: 20px auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   text-align: center;
   background: #ddebf8;
@@ -164,7 +170,51 @@ h4 {
   transform: translate(2px, 2px);
   box-shadow: 2px 2px 0 #3f459a;
 }
+footer {
+  margin-top: 40px;
+  padding-bottom: 30px;
+  text-align: center;
+}
 
+
+
+.contenedor-validadores {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 40px;
+  padding-bottom: 30px;
+}
+
+
+.badge-validador {
+  display: inline-block;
+  border: 1px solid #3f459a;
+  border-radius: 4px;
+  box-shadow: 4px 4px 0px #3f459a;
+  background-color: white; /* Fondo blanco para contraste del escudo HTML5 */
+  transition: transform 0.15s ease-out, box-shadow 0.15s ease-out;
+}
+
+
+.badge-validador:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px #3f459a;
+}
+
+
+.badge-css {
+  width: 88px;
+  height: 31px;
+}
+
+.badge-html5 {
+  width: 31px;
+  height: 31px;
+  padding: 2px;
+  box-sizing: border-box;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
