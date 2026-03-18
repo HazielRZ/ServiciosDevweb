@@ -178,7 +178,6 @@ footer {
   text-align: center;
 }
 
-
 .contenedor-validadores {
   display: flex;
   justify-content: center;
@@ -219,12 +218,8 @@ footer {
 
 .servicio-premium {
   background: #60a5e4;
-  transform: scale(1.02);
-  border-radius: 5px;
-  border: 0 solid #3f459a;
-  box-shadow: 8px 8px 0 #3f459a, 15px 15px 20px rgba(0, 0, 0, 0.2);
 
-  transition: transform 0.15s ease-out, box-shadow 0.15s ease-out;
+  border: 2px solid #212551;
 }
 /* ==========================================================================
    Helper classes

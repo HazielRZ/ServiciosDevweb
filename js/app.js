@@ -126,3 +126,40 @@ for (let i = 0; i < catalogoServicios.length; i++) {
 
 
 root.appendChild(seccionCatalogo);
+/**
+ * @returns {HTMLElement} Nodo footer ensamblado.
+ */
+function crearFooterValidadores() {
+  const footer = document.createElement('footer');
+
+  const divContenedor = document.createElement('div');
+  divContenedor.className = 'contenedor-validadores';
+
+  const enlaceHTML5 = document.createElement('a');
+  enlaceHTML5.href = 'https://validator.w3.org/nu/?doc=REFERER';
+
+  const imgHTML5 = document.createElement('img');
+  imgHTML5.className = 'badge-validador badge-html5';
+  imgHTML5.alt = '¡HTML5 Válido!';
+  imgHTML5.src = 'https://www.w3.org/html/logo/badge/html5-badge-h-solo.png';
+
+  enlaceHTML5.appendChild(imgHTML5);
+
+  const enlaceCSS = document.createElement('a');
+  enlaceCSS.href = 'https://jigsaw.w3.org/css-validator/check/referer';
+
+  const imgCSS = document.createElement('img');
+  imgCSS.className = 'badge-validador badge-css';
+  imgCSS.alt = '¡CSS Válido!';
+  imgCSS.src = 'https://jigsaw.w3.org/css-validator/images/vcss-blue';
+
+  enlaceCSS.appendChild(imgCSS);
+
+  divContenedor.appendChild(enlaceHTML5);
+  divContenedor.appendChild(enlaceCSS);
+  footer.appendChild(divContenedor);
+
+  return footer;
+}
+
+root.appendChild(crearFooterValidadores());
