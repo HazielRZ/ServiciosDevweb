@@ -136,6 +136,10 @@ body {
   align-items: center;
 }
 
+.hero h1:hover {
+  transform: translate(4px, 4px);
+}
+
 h4 {
   font-family: 'Courier New', Courier, monospace;
   background-color: #3f459a;
