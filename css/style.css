@@ -253,7 +253,7 @@ form.card {
   border-radius: 5px;
   font-family: inherit;
   background-color: #f8fbfd;
-  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1); 
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1);
   transition: border-color 0.2s, outline 0.2s;
 }
 
