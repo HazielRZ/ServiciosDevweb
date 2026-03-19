@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const panelErrores = document.getElementById('panel-errores');
 
   formulario.addEventListener('submit', (evento) => {
-    evento.preventDefault(); // Interceptar flujo nativo del formulario
+    evento.preventDefault();
 
     // Reiniciar interfaz de errores
     panelErrores.style.display = 'none';
