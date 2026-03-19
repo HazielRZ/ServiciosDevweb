@@ -217,7 +217,133 @@ footer {
 
   border: 2px solid #212551;
 }
+/* ==========================================================================
+   Estilos del Formulario 3D
+   ========================================================================== */
 
+.contenedor-formulario {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+form.card {
+  width: 100%;
+  box-sizing: border-box;
+  align-items: stretch;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #3f459a;
+}
+
+
+.form-control {
+  padding: 12px;
+  border: 2px solid #3f459a;
+  border-radius: 5px;
+  font-family: inherit;
+  background-color: #f8fbfd;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1); 
+  transition: border-color 0.2s, outline 0.2s;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #212551;
+  box-shadow: 0 0 0 3px rgba(63, 69, 154, 0.3);
+}
+
+.btn-block {
+  width: 100%;
+  margin-bottom: 15px;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.enlace-cancelar {
+  color: #3f459a;
+  text-decoration: underline;
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+.panel-errores {
+  background: #ffcccc;
+  color: #990000;
+  padding: 15px;
+  border: 2px solid #990000;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-align: left;
+  box-shadow: 2px 2px 0 #990000;
+}
+/* ==========================================================================
+   ========================================================================== */
+
+.btn-eliminar {
+  color: white;
+  background-color: #a83232;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 15px;
+  font-weight: bold;
+  border: 0 solid #661e1e;
+  box-shadow: 4px 4px 0 #661e1e;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s, background-color 0.15s;
+}
+
+.btn-eliminar:hover {
+  background-color: #8a2727;
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 #661e1e;
+}
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(15, 23, 42, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-out;
+}
+
+
+.modal-exito {
+  margin: 0;
+  width: 90%;
+  max-width: 400px;
+  background-color: #ffffff;
+  animation: slideUp 0.3s ease-out;
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */

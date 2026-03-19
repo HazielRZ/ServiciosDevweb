@@ -21,35 +21,35 @@
 
   <h1>Registrar Nuevo Servicio</h1>
 
-<main style="max-width: 600px; margin: 40px auto; padding: 20px;">
-  <form id="formulario-alta" class="card" style="width: 100%;">
+  <main class="contenedor-formulario">
+    <form id="formulario-alta" class="card">
 
-    <div id="panel-errores" style="display: none; background: #ffcccc; color: #990000; padding: 10px; border-radius: 5px; margin-bottom: 15px; width: 90%;"></div>
+      <div id="panel-errores" class="panel-errores" style="display: none;"></div>
 
-    <div style="width: 90%; margin-bottom: 15px; text-align: left;">
-      <label>Nombre del Servicio:</label>
-      <label for="input-nombre"></label><input type="text" id="input-nombre" style="width: 100%; padding: 8px;">
-    </div>
+      <div class="form-group">
+        <label for="input-nombre">Nombre del Servicio:</label>
+        <input type="text" id="input-nombre" class="form-control">
+      </div>
 
-    <div style="width: 90%; margin-bottom: 15px; text-align: left;">
-      <label>Descripción:</label>
-      <label for="input-desc"></label><textarea id="input-desc" rows="3" style="width: 100%; padding: 8px;"></textarea>
-    </div>
+      <div class="form-group">
+        <label for="input-desc">Descripción:</label>
+        <textarea id="input-desc" rows="3" class="form-control"></textarea>
+      </div>
 
-    <div style="width: 90%; margin-bottom: 15px; text-align: left;">
-      <label>Inversión (Precio MXN):</label>
-      <label for="input-precio"></label><input type="number" id="input-precio" style="width: 100%; padding: 8px;">
-    </div>
+      <div class="form-group">
+        <label for="input-precio">Inversión (Precio MXN):</label>
+        <input type="number" id="input-precio" class="form-control">
+      </div>
 
-    <div style="width: 90%; margin-bottom: 25px; text-align: left;">
-      <label>URL de la Fotografía:</label>
-      <label for="input-foto"></label><input type="text" id="input-foto" placeholder="ej. img/nuevo.jpg" style="width: 100%; padding: 8px;">
-    </div>
+      <div class="form-group">
+        <label for="input-foto">URL de la Fotografía:</label>
+        <input type="text" id="input-foto" placeholder="ej. img/nuevo.jpg" class="form-control">
+      </div>
 
-    <button type="submit" class="btn-services">Guardar Servicio</button>
-    <a href="index.html" style="display: block; margin-top: 15px; color: #3f459a;">Cancelar y regresar</a>
-  </form>
-</main>
+      <button type="submit" class="btn-services btn-block">Guardar Servicio</button>
+      <a href="services.html" class="enlace-cancelar">Cancelar y regresar</a>
+    </form>
+  </main>
 
 <script src="js/alta.js"></script>
 </body>
